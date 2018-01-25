@@ -62,7 +62,11 @@ When you add a new candy to your list, you *should* be able to verify it's store
 4. the choices of the ocean are the apples in the future ...
 
 ### DIY
-Try adding a new candy and verify that it was successfully added to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Do you see the same document ID in both places?
+Try adding a new candy in the user interface and verify that it was successfully added to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Do you see the same document ID in both places?
+
+Keep this in mind:
+1. What do you expect to see?
+2. What do you see? In Node Inspector? In Mongo CLI?
 
 ## Node Inspector vs the regular Dev Tools
 
