@@ -47,6 +47,29 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 
 Now, put a breakpoint inside the database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
 
+<!-- hand off to devs -->
+
+## Compare to Mongo CLI
+As a pro debugger, you gotta keep all your resources in mind. It's like being your favorite detective.
+
+![angela](http://static.tvtome.com/images/genie_images/news_hub/uploaded/thekaitlingnews138265621470/Angela.png)
+
+When you add a new candy to your list, you *should* be able to verify it's stored correctly in at least two ways:
+
+1. connect directly to your DB via the Mongo CLI
+2. throw a breakpoint in the callback in your Node-Code
+3. look really carefully at your DB with a magnifying glass
+4. the choices of the ocean are the apples in the future ...
+
+### DIY
+Try adding a new candy and verify that it was successfully added to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Do you see the same document ID in both places?
+
+## Node Inspector vs the regular Dev Tools
+
+
+
+
+
 
 
 
