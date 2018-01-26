@@ -54,7 +54,7 @@ As a pro debugger, you gotta keep all your resources in mind. It's like being yo
 
 ![angela](http://static.tvtome.com/images/genie_images/news_hub/uploaded/thekaitlingnews138265621470/Angela.png)
 
-When you add a new candy to your list, you *should* be able to verify it's stored correctly in at least two ways:
+When you click a candy name and edit it in the user interface, you *should* be able to verify it's stored correctly in at least two ways:
 
 1. connect directly to your DB via the Mongo CLI
 2. throw a breakpoint in the callback in your Node-Code
@@ -62,14 +62,19 @@ When you add a new candy to your list, you *should* be able to verify it's store
 4. the choices of the ocean are the apples in the future ...
 
 ### DIY
-Try adding a new candy in the user interface and verify that it was successfully added to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Do you see the same document ID in both places?
+Try clicking a candy name and editing it's name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How are you DB queries different between the two?
 
 Keep this in mind:
 1. What do you expect to see?
 2. What do you see? In Node Inspector? In Mongo CLI?
 
 ## Node Inspector vs the regular Dev Tools
+You can open up Node Inspector and Chrome dev tools at the same time, and they'll show different things. Why?? 
 
+### DIY
+We have a bug to fix! BTW if you don't know who [Grace Hopper](https://www.youtube.com/watch?v=S6sh8CxwWx8) is, you should change that.
+
+Try it out on the main index page (`/candies`). Open up Chrome dev tools and Node Inspector. You should see a file called `main.js` in your dev tools window. 
 
 
 
