@@ -81,7 +81,6 @@ When you click a candy name and edit it in the user interface, you *should* be a
 1. connect directly to your DB via the Mongo CLI
 2. throw a breakpoint in the callback in your Node-Code
 3. look really carefully at your DB with a magnifying glass
-4. the choices of the ocean are the apples in the future ...
 
 ### DIY
 Try clicking a candy name and editing it's name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How are you DB queries different between the two?
