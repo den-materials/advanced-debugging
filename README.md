@@ -17,7 +17,7 @@ How many of us have written code that doesn't quite work the way we hope or want
 
 ## Node Inspector
 
-Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `solution` branch. *Make sure you change into the solution code directory!* Try running your app to make sure it works right out of the box.
+Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `debugging` branch. *Make sure you change into the solution code directory!* Try running your app to make sure it works right out of the box.
 
 ### Fire up Node Inspector
 [Here's](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27) a good guide to using Node Inspector, I'm sure there's others. 
@@ -74,8 +74,7 @@ You can open up Node Inspector and Chrome dev tools at the same time, and they'l
 ### DIY
 We have a bug to fix! BTW if you don't know who [Grace Hopper](https://www.youtube.com/watch?v=S6sh8CxwWx8) is, you should change that.
 
-Try it out on the main index page (`/candies`). Open up Chrome dev tools and Node Inspector. You should see a file called `main.js` in your dev tools window. 
-
+Try adding a new candy on the main index page (`/candies`). Doesn't work does it? Use Chrome dev tools and Node Inspector to figure out why the new candy is not saving properly. *Hint: You should see a file called `main.js` in your dev tools window.*
 
 
 
