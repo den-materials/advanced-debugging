@@ -45,7 +45,15 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 2. Explore variables and other codes in the console
 3. Continue the code execution step by step, until the next breakpoint, step into functions, you name it.
 
+<!-- pass over to devs to experiment for a second -->
+
 Now, put a breakpoint inside the database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
+
+A couple more notes:
+* setting breakpoints in different routes will not catch until you hit that route
+* code in the app.js will only run at the very beginning when you launch node
+* use breakpoints to get a deeper understanding, or any understanding, of what order the lines of your code are executing in
+
 
 <!-- hand off to devs -->
 
@@ -75,6 +83,14 @@ You can open up Node Inspector and Chrome dev tools at the same time, and they'l
 We have a bug to fix! BTW if you don't know who [Grace Hopper](https://www.youtube.com/watch?v=S6sh8CxwWx8) is, you should change that.
 
 Try adding a new candy on the main index page (`/candies`). Doesn't work does it? Use Chrome dev tools and Node Inspector to figure out why the new candy is not saving properly. *Hint: You should see a file called `main.js` in your dev tools window.*
+
+## Fancy Breakpoints
+* Conditional breakpoints
+* Black box files
+
+## Resources
+[Documentation](https://nodejs.org/en/docs/inspector/)
+[Paul Irish's How To](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27)
 
 
 
