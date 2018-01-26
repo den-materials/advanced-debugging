@@ -17,7 +17,7 @@ How many of us have written code that doesn't quite work the way we hope or want
 
 ## Node Inspector
 
-Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `debugging` branch. *Make sure you change into the solution code directory!* Run the seed file and then try running your app to make sure it works right out of the box.
+Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `debugging` branch. *Make sure you change into the solution code directory!* Run the seed file and then try running your app to make sure it works right out of the box. The homepage is actually `localhost:3000/candies`.
 
 ### Fire up Node Inspector
 [Here's](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27) a good guide to using Node Inspector, I'm sure there's others. 
