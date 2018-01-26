@@ -103,6 +103,7 @@ Try adding a new candy on the main index page (`/candies`). Doesn't work does it
 
 ## Resources
 [Documentation](https://nodejs.org/en/docs/inspector/)
+
 [Paul Irish's How To](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27)
 
 
