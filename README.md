@@ -32,7 +32,7 @@ Wait for it to fire up, then open two tabs in Chrome: `localhost:3000/candies` a
 
 #### *Note* 
 
-Documentation claims you can just run this:
+Documentation suggests you can just run this:
 
 ```
 node --inspect app.js
