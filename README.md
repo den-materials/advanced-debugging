@@ -25,6 +25,8 @@ Clone the candies app again, [here's the repo](https://github.com/den-materials/
 
 Run the seed file and then try running your app to make sure it works right out of the box. The homepage is actually `localhost:3000/candies`.
 
+<!-- WDI6 11:14 -->
+
 ### Fire up Node Inspector
 [Here's](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27) a good guide to using Node Inspector, I'm sure there's others. 
 
@@ -54,6 +56,7 @@ node --inspect app.js
 But, I experienced a little finickyness with Node Inspector loading all the files in my project properly. Adding the `--inspect-brk` pauses execution on the first line of the project, and I've had more success getting all the files in my project properly using this.
 
 <!-- Pass to devs -->
+<!-- WDI6 11:36 -->
 
 ## Breakpoints
 Let's find a piece of code to run. How about the Get All Candies functionality? Let's find the code that executes that functionality...
@@ -75,6 +78,8 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 
 Now, put a breakpoint inside the `Candy.find` database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
 
+<!-- WDI6 11:53 -->
+
 A couple more notes:
 * setting breakpoints a route will not catch until you hit that route
 * code in the app.js will only run at the very beginning when you launch node
@@ -88,6 +93,7 @@ The seed file put in a company name for our seed data.
 2. Add some code to the `layout.ejs` file that displays the candy's company.
 
 <!-- hand off to devs -->
+<!-- WDI6 12:04 -->
 
 ## Compare to Mongo CLI
 As a pro debugger, you gotta keep all your resources in mind. It's like being your favorite detective.
@@ -114,6 +120,8 @@ You can open up Node Inspector and Chrome dev tools at the same time, and they'l
 We have a bug to fix! BTW if you don't know who [Grace Hopper](https://www.youtube.com/watch?v=S6sh8CxwWx8) is, you should change that.
 
 Try adding a new candy on the main index page (`/candies`). Doesn't work does it? Use Chrome dev tools and Node Inspector to figure out why the new candy is not saving properly. *Hint: You should see a file called `main.js` in your dev tools window.*
+
+<!-- WDI6 12:27 -->
 
 ## Fancy Breakpoints
 * Conditional breakpoints
