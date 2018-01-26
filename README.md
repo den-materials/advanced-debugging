@@ -30,6 +30,16 @@ node --inspect --inspect-brk app.js
 
 Wait for it to fire up, then open two tabs in Chrome: `localhost:3000/candies` and `about:inspect`.  You should see the app in localhost, and in the other, click "Open dedicated DevTools for Node". You should see something similar to the regular Chrome Dev Tools. Make sure you're in the "Sources" tab, click "file://" and expand those directories to see the files relevant to your Node server.
 
+#### *Note* 
+
+Documentation claims you can just run this:
+
+```
+node --inspect app.js
+```
+
+But, I experienced a little finickyness with Node Inspector loading all the files in my project properly. Adding the `--inspect-brk` pauses execution on the first line of the project, and I've had more success getting all the files in my project properly using this.
+
 <!-- Pass to devs -->
 
 ## Breakpoints
@@ -43,17 +53,21 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 
 1. Hover over variables to see what they equal
 2. Explore variables and other codes in the console
-3. Continue the code execution step by step, until the next breakpoint, step into functions, you name it.
-
-<!-- pass over to devs to experiment for a second -->
+3. Add a variable to the watch panel
+4. Continue the code execution step by step, until the next breakpoint, step into functions, you name it.
 
 Now, put a breakpoint inside the database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
 
 A couple more notes:
 * setting breakpoints in different routes will not catch until you hit that route
 * code in the app.js will only run at the very beginning when you launch node
-* use breakpoints to get a deeper understanding, or any understanding, of what order the lines of your code are executing in
+* use breakpoints to get a deeper unders
 
+### DIY
+The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add a company field to the `layout.ejs` file. 
+
+<!-- pass over to devs to experiment for a second -->
+tanding, or any understanding, of what order the lines of your code are executing in
 
 <!-- hand off to devs -->
 
@@ -86,7 +100,7 @@ Try adding a new candy on the main index page (`/candies`). Doesn't work does it
 
 ## Fancy Breakpoints
 * Conditional breakpoints
-* Black box files
+* Black box scripts
 
 ## Resources
 [Documentation](https://nodejs.org/en/docs/inspector/)
