@@ -73,7 +73,7 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 
 ![dev tools legend](https://camo.githubusercontent.com/be612337a2fc8b15333b0bdbd6c49c2aac6aaa79/687474703a2f2f73362e706f7374696d672e6f72672f35667765777a6630682f32393837343063305f313735665f313165355f383461315f6638633838633365363037612e6a7067)
 
-Now, put a breakpoint inside the database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
+Now, put a breakpoint inside the `Candy.find` database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
 
 A couple more notes:
 * setting breakpoints in different routes will not catch until you hit that route
