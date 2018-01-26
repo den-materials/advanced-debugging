@@ -75,9 +75,6 @@ A couple more notes:
 ### DIY
 The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add a company field to the `layout.ejs` file. 
 
-<!-- pass over to devs to experiment for a second -->
-tanding, or any understanding, of what order the lines of your code are executing in
-
 <!-- hand off to devs -->
 
 ## Compare to Mongo CLI
@@ -92,7 +89,7 @@ When you click a candy name and edit it in the user interface, you *should* be a
 3. look really carefully at your DB with a magnifying glass
 
 ### DIY
-Try clicking a candy name and editing it's name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How are you DB queries different between the two?
+Try clicking a candy name and editing it's name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How are your DB queries different between the two?
 
 Keep this in mind:
 1. What do you expect to see?
