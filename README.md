@@ -73,7 +73,7 @@ A couple more notes:
 * use breakpoints to get a deeper unders
 
 ### DIY
-The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add a company field to the `layout.ejs` file. 
+The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add some code to the `layout.ejs` file that displays the candy's company.
 
 <!-- hand off to devs -->
 
