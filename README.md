@@ -17,7 +17,9 @@ How many of us have written code that doesn't quite work the way we hope or want
 
 ## Node Inspector
 
-Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `debugging` branch. *Make sure you change into the solution code directory!* Run the seed file and then try running your app to make sure it works right out of the box. The homepage is actually `localhost:3000/candies`.
+Clone the candies app again, [here's the repo](https://github.com/den-materials/express-views-lesson.git), then checkout the `debugging` branch. *Make sure you change into the solution code directory!* 
+
+Run the seed file and then try running your app to make sure it works right out of the box. The homepage is actually `localhost:3000/candies`.
 
 ### Fire up Node Inspector
 [Here's](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27) a good guide to using Node Inspector, I'm sure there's others. 
@@ -28,7 +30,14 @@ Kill your node server. Make sure you're using at least Node 6.3. Run a `node -v`
 node --inspect --inspect-brk app.js
 ```
 
-Wait for it to fire up, then open two tabs in Chrome: `localhost:3000/candies` and `about:inspect`.  You should see the app in localhost, and in the other, click "Open dedicated DevTools for Node". You should see something similar to the regular Chrome Dev Tools. Make sure you're in the "Sources" tab, click "file://" and expand those directories to see the files relevant to your Node server.
+Wait for it to fire up. This is where it gets a little tricky.
+
+1. Type `about:inspect` into your Chrome Address bar
+2. Click "Open dedicated DevTools for Node"
+3. Execution is paused on the first line. Hit the play button.
+4. Go to `localhost:3000/candies` in Chrome.
+
+In the Node Inspector, you should see something similar to the regular Chrome Dev Tools. Make sure you're in the "Sources" tab, click "file://" and expand those directories to see the files relevant to your Node server.
 
 #### *Note* 
 
