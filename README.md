@@ -76,7 +76,7 @@ When I try loading that page, it pauses execution at that breakpoint. Now I can:
 Now, put a breakpoint inside the `Candy.find` database query callback. Look at the arguments that Mongoose has returned to you. That's nice, isn't it? Lastly, throw a breakpoint right where the view file is loaded. You can literally see the data that's passed into the EJS file.
 
 A couple more notes:
-* setting breakpoints in different routes will not catch until you hit that route
+* setting breakpoints a route will not catch until you hit that route
 * code in the app.js will only run at the very beginning when you launch node
 * use breakpoints to get a deeper understanding of the order in which your lines of code are executing
 
@@ -84,7 +84,7 @@ A couple more notes:
 
 The seed file put in a company name for our seed data. 
 
-1. Set a breakpoint at the line that renders the layout view to see the data that being passed into the EJS template. 
+1. Set a breakpoint at the line that renders the layout view to see the data that is being passed into the EJS template. 
 2. Add some code to the `layout.ejs` file that displays the candy's company.
 
 <!-- hand off to devs -->
@@ -101,7 +101,7 @@ When you click a candy name and edit it in the user interface, you *should* be a
 3. look really carefully at your DB with a magnifying glass
 
 ### DIY
-Try clicking a candy name and editing it's name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector, as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How are your DB queries different between the two?
+Try clicking a candy name and editing its name and color. Verify that the data is saved correctly to your database by using breakpoints and the node inspector (hint: look in the `updateCandy` function), as well as using the Mongo CLI. Where can you find the candy ID? Do you see the same document ID in both Node Inspector and Mongo CLI? How is your database query different in your Node app vs the CLI?
 
 Keep this in mind:
 1. What do you expect to see?
