@@ -72,8 +72,12 @@ A couple more notes:
 * code in the app.js will only run at the very beginning when you launch node
 * use breakpoints to get a deeper understanding of the order in which your lines of code are executing
 
-### DIY
-The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add some code to the `layout.ejs` file that displays the candy's company.
+### Let's Code Something
+
+The seed file put in a company name for our seed data. 
+
+1. Set a breakpoint at the line that renders the layout view to see the data that being passed into the EJS template. 
+2. Add some code to the `layout.ejs` file that displays the candy's company.
 
 <!-- hand off to devs -->
 
