@@ -70,7 +70,7 @@ Now, put a breakpoint inside the database query callback. Look at the arguments 
 A couple more notes:
 * setting breakpoints in different routes will not catch until you hit that route
 * code in the app.js will only run at the very beginning when you launch node
-* use breakpoints to get a deeper unders
+* use breakpoints to get a deeper understanding of the order in which your lines of code are executing
 
 ### DIY
 The seed file put in a company name for our seed data. Use the inspector tool to explore this functionality and add some code to the `layout.ejs` file that displays the candy's company.
