@@ -9,11 +9,15 @@ How many of us have written code that doesn't quite work the way we hope or want
 
 - open up the Node Inspector tool
 - explore the files in your node project within the Inspector tool
-- run your application and pause the execution at a breakpoint
 - explain the difference between regular dev tools and node inspector
+- understand what a breakpoint is and how to pause at that line
 - explore the data in your code while your application is paused
-- navigate through your application step by step
 - explain how data is passed into an EJS file to construct HTML
+- navigate through your application step by step
+
+## Node Inspector vs Dev Tools
+
+Dev tools is for debugging code for your app's front end. Node Inspector gives you the same debugging tools for your back end.
 
 ## Node Inspector
 
@@ -55,6 +59,8 @@ But, I experienced a little finickyness with Node Inspector loading all the file
 Let's find a piece of code to run. How about the Get All Candies functionality? Let's find the code that executes that functionality...
 
 Let's set a breakpoint on the first line of the `getAll` function. Click the line number of the first line, and you should see the blue breakpoint symbol. Also, note there's a list of all your breakpoints in the right pane. You can even toggle them on and off. Now that is power.
+
+![breakpoint](https://github.com/den-materials/advanced-debugging/blob/master/Screen%20Shot%202018-01-26%20at%2010.21.22%20AM.png?raw=true)
 
 I want to test this code out. How do I do that? What do I expect to see? I can just hit that route in the browser window to test that functionality out.
 
